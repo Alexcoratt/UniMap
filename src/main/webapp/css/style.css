@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+     background: #FFFFFF;
+     color: #000000;
+     font-family: 'Roboto', sans-serif;
+     font-weight: 400;
+     font-size: 18px;
+     margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+.header {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 156px 1fr;
+}
+
+.header-logo{
+  height: 48px;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 51px;
+  font-weight: 600;
+}
+
+.header-nav{
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+  height: 38px;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 51px;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 10px 386px 330px;
+}
+
+.rectangle_1 {
+	grid-row: 2/3;
+	background-color: #52B6FF;
+	
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+}
+.slogan {
+	grid-column: 3/8;
+	padding-top: 127px;
+	font-size: 46px;
+	color: #FFFFFF;
+	font-weight: 600;
+}
+
+.rectangle_2 {
+	grid-row: 3/-1;
+	
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+}
+
+.button_rasp {
+	grid-column: 3/5;
+	grid-row: 2/3;
+	text-align: center;
+	font-size: 26px;
+}
+
+.button_map {
+	grid-column: 6/8;
+	grid-row: 2/3;
+	text-align: center;
+	font-size: 26px;
+}
+
+a.button_1{
+	background-color: #52B6FF;
+	padding: 28px 80px;
+	font-size: 28px;
+	color: #FFFFFF;
+	border-radius: 10px;
+	
+}
+
+a.button_1:hover{
+	color: #A0A69F;
+	background-color: #E3E0E0;
+}
+
+a.button_2{
+	background-color: #52B6FF;
+	padding: 28px 114px;
+	font-size: 28px;
+	color: #FFFFFF;
+	border-radius: 10px;
+	
+}
+
+a.button_2:hover{
+	color: #A0A69F;
+	background-color: #E3E0E0;
+}
+
+.footer {
+	display: grid;
+	grid-template-rows: 60px 1fr;
+	background-color: #F3F5F6;
+	padding-top: 45px;
+	padding-left: 35px;
+	font-size: 14px;
+}
