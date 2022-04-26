@@ -19,21 +19,42 @@ a{
 	grid-template-rows: 156px 1fr;
 }
 
-.header-logo{
+.header-logo {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+.logo-icon {
+	background-image: url(images/icon.png);
+	background-size: cover;
+	background-position: center;
+	width: 50%;
+	height: 50%;
+	margin-left: 125px;
+	margin-top: 15px;
+}
+
+.logo-text{
   height: 48px;
-  text-align: center;
-  font-size: 18px;
-  padding-top: 51px;
+  font-size: 20px;
+  padding-top: 47px;
   font-weight: 600;
 }
 
 .header-nav{
 	display: grid;
-	grid-template-columns: repeat(4, auto);
+	grid-template-columns: repeat(3, auto);
   height: 38px;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   padding-top: 51px;
+}
+
+a.header-nav_link{
+  color: #000000;
+}
+
+a.header-nav_link:hover{
+	color: #878787;
 }
 
 .content {
@@ -43,7 +64,7 @@ a{
 
 .rectangle_1 {
 	grid-row: 2/3;
-	background-color: #52B6FF;
+	background-color: #7248B8;
 	
 	display: grid;
 	grid-template-columns: repeat(9, 1fr);
@@ -79,7 +100,7 @@ a{
 }
 
 a.button_1{
-	background-color: #52B6FF;
+	background-color: #7248B8;
 	padding: 28px 80px;
 	font-size: 28px;
 	color: #FFFFFF;
@@ -93,7 +114,7 @@ a.button_1:hover{
 }
 
 a.button_2{
-	background-color: #52B6FF;
+	background-color: #7248B8;
 	padding: 28px 114px;
 	font-size: 28px;
 	color: #FFFFFF;
@@ -104,6 +125,65 @@ a.button_2{
 a.button_2:hover{
 	color: #A0A69F;
 	background-color: #E3E0E0;
+}
+
+.about-content {
+	display: grid;
+	grid-template-rows: 10px 650px 100px;
+}
+
+.about-rectangle {
+	grid-row: 2/3;
+	background-color: #7248B8;
+	
+	display: grid;
+	grid-template-rows: 130px 520px;
+	grid-template-columns: 305px 830px 305px;
+}
+
+.about-header {
+	grid-row: 1/2;
+	grid-column: 2/3;
+	padding-top: 60px;
+	font-size: 32px;
+	color: #FFFFFF;
+	font-weight: 600;
+}
+
+.about-text {
+	grid-row: 2/-1;
+	grid-column: 2/3;
+	padding-top: 60px;
+	font-size: 24px;
+	color: #FFFFFF;
+}
+
+.map-content {
+	display: grid;
+	grid-template-rows: 10px 700px 100px;
+}
+
+.map-rectangle {
+	grid-row: 2/3;
+	background-color: #7248B8;
+	
+	display: grid;
+	grid-template-rows: 130px 460px 196px;
+	grid-template-columns: 305px 830px 305px;
+}
+
+.map-header {
+	grid-row: 1/2;
+	grid-column: 2/3;
+	padding-top: 60px;
+	font-size: 32px;
+	color: #FFFFFF;
+	font-weight: 600;
+}
+
+.map-img {
+	grid-row: 2/3;
+	grid-column: 2/3;
 }
 
 .footer {
