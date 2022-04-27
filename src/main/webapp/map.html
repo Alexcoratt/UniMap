@@ -3,25 +3,17 @@
 	<head>
 		<title>UniMap</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/header_style.css">
 		<meta charset="UTF-8">
 	</head>
 	<body>
-		<header class="header">
-			<div class="header-logo">
-				<div class="logo-icon">
-			
-				</div>
-				<div class="logo-text">
-					UniMap
-				</div>
-			</div>
-			<nav class="header-nav">
-				<a class="header-nav_link" href="index.html">Главная</a>
-				<a class="header-nav_link" href="map.html">Карта ВШПМ</a>
-				<a class="header-nav_link" href="about.html">О нас</a>
-			</nav>
-			
-		</header>
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/add_template.js"></script>
+		<script>
+			addElem("html_templates/header.html", "header", "header-div");
+		</script>
+		<div id="header-div"></div>
+		
 		<div class="map-content">
 			<div class="map-rectangle">
 				<div class="map-header">

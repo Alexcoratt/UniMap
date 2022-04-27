@@ -5,56 +5,12 @@ body {
      color: #000000;
      font-family: 'Roboto', sans-serif;
      font-weight: 400;
-     font-size: 18px;
+     font-size: 16pt;
      margin: 0;
 }
 
 a{
 	text-decoration: none;
-}
-
-.header {
-	display: grid;
-	grid-template-columns: 1fr 2fr 1fr;
-	grid-template-rows: 156px 1fr;
-}
-
-.header-logo {
-	display: grid;
-	grid-template-columns: 2fr 1fr;
-}
-.logo-icon {
-	background-image: url(images/icon.png);
-	background-size: cover;
-	background-position: center;
-	width: 50%;
-	height: 50%;
-	margin-left: 125px;
-	margin-top: 15px;
-}
-
-.logo-text{
-  height: 48px;
-  font-size: 20px;
-  padding-top: 47px;
-  font-weight: 600;
-}
-
-.header-nav{
-	display: grid;
-	grid-template-columns: repeat(3, auto);
-  height: 38px;
-  text-align: center;
-  font-size: 18px;
-  padding-top: 51px;
-}
-
-a.header-nav_link{
-  color: #000000;
-}
-
-a.header-nav_link:hover{
-	color: #878787;
 }
 
 .content {
@@ -193,4 +149,9 @@ a.button_2:hover{
 	padding-top: 45px;
 	padding-left: 35px;
 	font-size: 14px;
+}
+
+.unactive, .unactive:hover, .unactive:focus {
+	color: #afafaf!important;
+	text-decoration: none!important;
 }
