@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>О нас</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/add-template.js"></script>
+		<script>
+			addElem("templates.html", "header-template", "header-div");
+			addElem("templates.html", "footer-template", "footer-div");
+		</script>
+		
+		<div id="header-div" class="template-container"></div>
+		
+		<div class="content-slide">
+			<div class="content-box">
+				<h1 class="content-heading">О нас</h1>
+				<p>
+					Теряешь слишком много времени в поисках нужной аудитории?
+					Или не помнишь какая следующая пара, так как расписание часто обновляется?
+				</p>
+				<p>
+					Тогда этот сайт как раз для тебя! 
+					Наш сайт направлен на то, чтобы помочь каждому студенту не тратить свое время впустую. 
+				</p>
+				<p>
+					UniMap - это команда, которая поможет тебе легко сориентироваться в корпусе университета.
+					На нашем сайте ты найдешь карту ВШПМ и расписание свое группы.
+				</p>
+			</div>
+		</div>
+		
+		<div id="footer-div"></div>
+		
+	</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Главная</title>
+		<link rel="stylesheet" href="css/style.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/add-template.js"></script>
+		<script>
+			addElem("templates.html", "header-template", "header-div");
+			addElem("templates.html", "footer-template", "footer-div");
+		</script>
+		
+		<div id="header-div" class="template-container"></div>
+		
+		<div class="content-slide">
+			<div class="content-box">		
+				<div class="slogan">
+					Быстрое обновление расписания занятий для студентов любой группы
+				</div>
+			</div>
+			
+			<div class="button-container">
+				<form>
+					<button class="main dark unactive">
+						Расписание
+					</button>
+				</form>
+				<form action="map.html">
+					<button class="main dark">
+						Карта
+					</button>
+				</form>
+			</div>
+		</div>
+		
+		<div id="footer-div" class="template-container"></div>
+		
+	</body>
+</html>
+

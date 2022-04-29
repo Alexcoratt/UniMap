@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Карта ВШПМ</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/add-template.js"></script>
+		<script>
+			addElem("templates.html", "header-template", "header-div");
+			addElem("templates.html", "footer-template", "footer-div");
+		</script>
+		
+		<div id="header-div" class="template-container"></div>
+		
+		<div class="content-slide">
+			<div class="content-box">
+				<div class="content-heading">
+					Карта ВШПМ
+				</div>
+				<div>
+					<ul>
+						<li>
+							<p>3 этаж</p>
+							<img class="map-img" src="images/map/floor3.png">
+						</li>
+						<li>
+							<p>2 этаж</p>
+							<img class="map-img" src="images/map/floor2.png">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer-div"></div>
+		
+	</body>
+</html>

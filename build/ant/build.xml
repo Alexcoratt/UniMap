@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="UniMap" default="run">
+	<target name="init">
+	 	<echo message="Building UniMap Project"></echo>
+	 	<property name="project_dir" value="../.."></property>
+	 	<property name="docs_dir" value="${project_dir}/docs"></property>
+	</target>
+	
+	<target name="create" depends="init">
+		<mkdir dir="${docs_dir}"></mkdir>
+	</target>
+	
+	<target name="copy" depends="create">
+		<copy todir="${docs_dir}">
+			<fileset dir="${project_dir}/src/main/webapp">
+				<include name="*"></include>
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="run" depends="copy">
+		<echo message="Building Completed"></echo>
+	</target>
+</project>
