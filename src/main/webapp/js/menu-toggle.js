@@ -1,5 +1,17 @@
 $("#menu-toggler").click(function() {
 	$("#menu-toggler").toggleClass("active");
 	$(".togline").toggleClass("active");
-	$(".header-nav").slideToggle(500);
+					
+	var $element = $(".header-nav");
+	if ($element.is(':visible')) {
+		$element.slideUp();
+	}
+	else {
+		$element.slideDown({
+			duration: 500,
+			start: function() {
+				$element.css('display','grid');
+			}
+		});
+	}
 });

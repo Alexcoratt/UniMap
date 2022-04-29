@@ -226,7 +226,7 @@ button.unactive, button.unactive:hover, button.unactive:focus {
 }
 /* ------------------ */
 
-@media screen and (max-width: 1150px){
+@media screen and (max-width: 950px){
 	
 	#menu-toggler {
 		display: block;
@@ -273,7 +273,7 @@ button.unactive, button.unactive:hover, button.unactive:focus {
 	}
 	
 	.header-nav {
-		display: grid;
+		display: none;
 		justify-content: center;
 		text-align: center;
 	}
