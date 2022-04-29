@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<title>UniMap</title>
+		<title>Карта ВШПМ</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
 		<script src="js/jquery-3.6.0.min.js"></script>
-		<script src="js/add_template.js"></script>
+		<script src="js/add-template.js"></script>
 		<script>
 			addElem("templates.html", "header-template", "header-div");
 			addElem("templates.html", "footer-template", "footer-div");
 		</script>
-		<div id="header-div"></div>
+		
+		<div id="header-div" class="template-container"></div>
 		
 		<div class="content-slide">
 			<div class="content-box">
