@@ -14,7 +14,6 @@
 	<target name="copy" depends="create">
 		<copy todir="${docs_dir}">
 			<fileset dir="${project_dir}/src/main/webapp">
-				<include name="*"></include>
 			</fileset>
 		</copy>
 	</target>
