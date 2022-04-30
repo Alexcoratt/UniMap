@@ -109,7 +109,7 @@ body {
 	padding: 60px 0;
 }
 
-button, button.dark {
+button, button.dark, .button{
 	font-family: inherit;
 	text-align: center;
 	background-color: var(--accent);
@@ -119,6 +119,7 @@ button, button.dark {
 	border-radius: 20px;
 	transition-duration: .2s;
 	transition-timing-function: linear;
+	box-shadow: var(--additional) 5px 5px 2px
 }
 
 button:hover, .button:hover {
@@ -292,10 +293,9 @@ button.unactive, button.unactive:hover, button.unactive:focus {
 		margin: 40px;
 	}
 	
-	button.main, .button {
+	button.main {
 		height: 50px;
 		margin: 0;
-		box-shadow: var(--additional) 5px 5px 2px
 	}
 
 	.header-logo {
