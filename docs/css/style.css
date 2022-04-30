@@ -41,7 +41,6 @@ body {
 	color: var(--light);
 }
 
-/*@media screen and (min-width: 1150px) {*/
 #header {
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
@@ -90,7 +89,7 @@ body {
 /* content style */
 .content-box, .content-box.dark{
 	background-color: var(--accent);
-	padding: 120px 20%;
+	padding: 60px 20%;
 	color: var(--light);
 	
 	display: grid;
@@ -107,6 +106,7 @@ body {
 	align-items: center;
 	align-content: center;
 	min-height: 100vh;
+	padding: 60px 0;
 }
 
 button, button.dark {
@@ -144,11 +144,15 @@ button.main {
 	grid-column-gap: 70px;
 }
 
-.content-heading {
+h1 {
 	font-size: 24pt;
 	margin: 0 0 20px 0;
 }
-/*}*/
+
+h2 {
+	font-size: 20pt;
+	margin: 20px 0 10px 0;
+}
 /* ----------------------- */
 
 .template-container {
@@ -184,8 +188,8 @@ button.unactive, button.unactive:hover, button.unactive:focus {
 		background-color: var(--accent);
 		z-index: 4;
 		position: absolute;
-		left: 42px;
-		top: 20px;
+		left: 10%;
+		top: 16px;
 		transition-duration: .5s;
 		border-radius: 12px;
 	}
@@ -272,12 +276,6 @@ button.unactive, button.unactive:hover, button.unactive:focus {
 		height: initial;
 		padding: 0;
 		width: 100vw;
-		position: relative;
-	}
-	
-	#header.fixed {
-		position: fixed;
-		top: 0;
 	}
 	
 	.content-box {
@@ -302,6 +300,7 @@ button.unactive, button.unactive:hover, button.unactive:focus {
 	.header-logo {
 		justify-content: center;
 		grid-column-gap: 10px;
+		margin: 8px 30%;
 	}
 
 	.logo-icon {
@@ -313,13 +312,9 @@ button.unactive, button.unactive:hover, button.unactive:focus {
 	}
 	
 	.header-nav {
-		display: none;
+		display: grid;
 		justify-content: center;
 		text-align: center;
-	}
-	
-	body.shifted {
-		margin-top: 100px;
 	}
 	
 }
