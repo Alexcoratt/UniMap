@@ -199,6 +199,7 @@ button.unactive, button.unactive:hover, button.unactive:focus {
 	width: inherit;
 	border-radius: 2px;
 	background-color: var(--black);
+	transition-duration: inherit;
 }
 
 .togline.top > .togline-inner{
@@ -217,12 +218,20 @@ button.unactive, button.unactive:hover, button.unactive:focus {
 	transform: rotate(45deg);
 }
 
+.togline.top.active {
+	width: 0;
+}
+
 .togline.middle.active {
 	transform: rotate(-45deg);
 }
 
 .togline.bottom.active {
 	transform: rotate(45deg);
+}
+
+.togline.bottom.active > .togline-inner {
+	width: 100%;
 }
 /* ------------------ */
 

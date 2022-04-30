@@ -8,6 +8,7 @@
 	</target>
 	
 	<target name="create" depends="init">
+		<delete dir="${docs_dir}"></delete>
 		<mkdir dir="${docs_dir}"></mkdir>
 	</target>
 	
