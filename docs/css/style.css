@@ -26,18 +26,19 @@ body {
 }
 
 #menu-toggler {
-		display: none;
+	display: none;
 }
 
 .navlink {
 	color: #000000;
 	text-decoration: none;
 	margin: 8px;
+	transition-duration: .5s;
 }
 
 .navlink:hover {
-	text-decoration: underline;
-	text-decoration-thickness: 2px;
+	text-shadow: var(--accent) 0 0 5px;
+	color: var(--light);
 }
 
 /*@media screen and (min-width: 1150px) {*/
@@ -50,14 +51,9 @@ body {
 	width: calc(100% - 120px);
 	background-color: var(--light);
 	z-index: 3;
-	position: relative;
-	transition-duration: .5s;
-}
-
-#header.active {
 	position: fixed;
 	top: 0;
-	background-color: var(--light-grey);
+	transition-duration: .5s;
 }
 
 .logo-icon {
@@ -167,6 +163,8 @@ button.main {
 	color: #afafaf!important;
 	cursor: unset!important;
 	text-decoration: none!important;
+	text-shadow: none!important;
+	box-shadow: none!important;
 }
 
 button.unactive, button.unactive:hover, button.unactive:focus {
@@ -177,13 +175,19 @@ button.unactive, button.unactive:hover, button.unactive:focus {
 	
 	/* menu-toggler style */
 	#menu-toggler {
-		display: block;
-		width: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 30px;
+		height: 30px;
+		padding: 5px;
+		background-color: var(--accent);
 		z-index: 4;
 		position: absolute;
 		left: 42px;
-		top: 24px;
+		top: 20px;
 		transition-duration: .5s;
+		border-radius: 12px;
 	}
 	
 	#menu-toggler:hover {
@@ -191,27 +195,42 @@ button.unactive, button.unactive:hover, button.unactive:focus {
 	}
 	
 	#menu-toggler.active {
-		top: 36px;
+		border-radius: 2px;
+		background: transparent;
+	}
+	
+	.togline-container {
+		display: grid;
+		grid-row-gap: 3px;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	#menu-toggler.active > .togline-container{
+		grid-row-gap: 0;
 	}
 	
 	.togline {
 		height: 3px;
-		margin: 3px 0;
-		width: 100%;
+		width: 20px;
 		display: flex;
 		transition-duration: .5s;
+	}
+
+	.togline-inner {
+		height: inherit;
+		width: inherit;
+		border-radius: 2px;
+		background-color: var(--light);
+		transition-duration: inherit;
 	}
 	
 	.togline.active {
 		margin: -3px 0;
 	}
 	
-	.togline-inner {
-		height: inherit;
-		width: inherit;
-		border-radius: 2px;
-		background-color: var(--black);
-		transition-duration: inherit;
+	.togline.active > .togline-inner {
+		background-color: var(--black)
 	}
 	
 	.togline.top > .togline-inner{
@@ -253,6 +272,12 @@ button.unactive, button.unactive:hover, button.unactive:focus {
 		height: initial;
 		padding: 0;
 		width: 100vw;
+		position: relative;
+	}
+	
+	#header.fixed {
+		position: fixed;
+		top: 0;
 	}
 	
 	.content-box {
@@ -291,6 +316,10 @@ button.unactive, button.unactive:hover, button.unactive:focus {
 		display: none;
 		justify-content: center;
 		text-align: center;
+	}
+	
+	body.shifted {
+		margin-top: 100px;
 	}
 	
 }

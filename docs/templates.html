@@ -9,22 +9,25 @@
 <body>
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<header class="header" id="header">
+		<script src="js/dynamic-header.js"></script>
 		<div id="menu-toggler">
 			<script src="js/menu-toggle.js"></script>
-			<div class="togline top">
-				<div class="togline-inner"></div>
-			</div>
-			<div class="togline middle">
-				<div class="togline-inner"></div>
-			</div>
-			<div class="togline bottom">
-				<div class="togline-inner"></div>
+			<div class="togline-container">
+				<div class="togline top">
+					<div class="togline-inner"></div>
+				</div>
+				<div class="togline middle">
+					<div class="togline-inner"></div>
+				</div>
+				<div class="togline bottom">
+					<div class="togline-inner"></div>
+				</div>
 			</div>
 		</div>
-		<div class="header-logo">	
+		<a class="header-logo navlink" href="index.html">	
 			<img src="images/icons/logo.png" class="logo-icon">
 			<h2 class="logo-text">UniMap</h2>
-		</div>
+		</a>
 		<nav class="header-nav">
 			<a class="navlink" href="index.html">Главная</a>
 			<a class="navlink unactive">Расписание</a>
