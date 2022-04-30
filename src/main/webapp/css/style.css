@@ -118,13 +118,13 @@ button, button.dark {
 	margin: 20px;
 	border-radius: 20px;
 	transition-duration: .2s;
-	transition-property: background-color;
 	transition-timing-function: linear;
 }
 
-button:hover {
+button:hover, .button:hover {
 	cursor: pointer;
-	background-color: var(--additional);
+	background-color: var(--additional)!important;
+	box-shadow: none!important;
 }
 
 button.light {
@@ -199,8 +199,8 @@ button.unactive, button.unactive:hover, button.unactive:focus {
 	}
 	
 	#menu-toggler.active {
-		border-radius: 2px;
 		background: transparent;
+		box-shadow: none;
 	}
 	
 	.togline-container {
@@ -292,9 +292,10 @@ button.unactive, button.unactive:hover, button.unactive:focus {
 		margin: 40px;
 	}
 	
-	button.main {
+	button.main, .button {
 		height: 50px;
 		margin: 0;
+		box-shadow: var(--additional) 5px 5px 2px
 	}
 
 	.header-logo {
